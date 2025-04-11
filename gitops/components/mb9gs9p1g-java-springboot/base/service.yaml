@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: mb9gs9p1g-java-springboot
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: mb9gs9p1g-java-springboot 
+  name: mb9gs9p1g-java-springboot
+spec:
+  ports:
+  - port: 8081 
+    targetPort: 8081 
+  selector:
+    app.kubernetes.io/instance: mb9gs9p1g-java-springboot 
