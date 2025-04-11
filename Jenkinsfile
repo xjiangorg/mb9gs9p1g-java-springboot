@@ -24,7 +24,7 @@ pipeline {
         ROX_API_TOKEN = credentials('ROX_API_TOKEN')
         GITOPS_AUTH_PASSWORD = credentials('GITOPS_AUTH_PASSWORD')
         /* Set this password for your specific registry */
-        /* IMAGE_REGISTRY_PASSWORD = credentials('IMAGE_REGISTRY_PASSWORD') */
+        IMAGE_REGISTRY_PASSWORD = credentials('IMAGE_REGISTRY_PASSWORD')
         /* Default registry is set to quay.io */
         QUAY_IO_CREDS = credentials('QUAY_IO_CREDS')
         /* ARTIFACTORY_IO_CREDS = credentials('ARTIFACTORY_IO_CREDS') */
